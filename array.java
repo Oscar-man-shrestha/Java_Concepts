@@ -29,14 +29,15 @@
 
 // public class array {
 //     public static void main(String args[]){
-//         int A[]={3,9,7,8,12,6,15,5,4,10};
 //         int sum=0;
-//         for(int i=0;i<A.length;i++){
-           
-//             sum+=A[i];
-            
-//         }
-//         System.out.println(sum);
+//        int A[]={3,9,7,8,12,6,15,5,4,10};
+//        for(int i=0;i<A.length;i++){
+//         sum=sum+A[i];
+       
+
+
+//        }
+//        System.out.print(sum);
 //     }
 // }
 
@@ -46,18 +47,20 @@
 // public class array {
 //     public static void main(String args[]){
 // Scanner sc=new Scanner(System.in);
-// System.out.println("Enter the Key:");
+// System.out.print("Enter the Key:");
 // int key=sc.nextInt();
 //         int A[]={3,9,7,8,12,6,15,5,4,10};
 
-//         for (int i=0;i<A.length;i++){
-//             if(key==A[i]){
-//                 System.out.println("Found in index :"+i);
-//                 System.exit(0);
-//             }
-           
-//         }
-//         System.out.println("Not Found!!");
+// for(int i=0;i<A.length;i++){
+//     if(key==A[0]){
+//         System.out.print("Found");
+//         System.exit(0);
+//     }
+//     else{
+//         System.out.print("Not Found");
+//         break;
+//     }
+// }
 //     }
 // }
 
@@ -67,21 +70,21 @@
 // public class array {
 //     public static void main(String args[]){
 //         int A[]={3,9,7,8,12,6,15,5,4,10};
-//         int maxinmum=A[0];
-//         int prevMaximum=Integer.MIN_VALUE;
-
-//         for (int i=0;i<A.length;i++){
-//             if(A[i]>maxinmum){
-//                 prevMaximum=maxinmum;
-//                 maxinmum=A[i];
-//             }
-//             else if(A[i]>prevMaximum && A[i]!=maxinmum){
-//                  prevMaximum=A[i];
-//             }
+//        int maximum=Integer.MIN_VALUE;
+//        for(int i=0;i<A.length;i++){
+//         if(A[i]>maximum){
+//             maximum=A[i];
 //         }
-//         System.out.println(prevMaximum);
-//     }
-// }
+//        }
+//        System.out.print("Maximum :"+maximum);
+           
+//         }
+
+
+
+
+//        }
+
 
 
 //rotate
@@ -118,19 +121,22 @@
 //         int A[]={3,9,7,8,12,6,15,5,4,10};
       
 
-//         for (int x:A)
-//             System.out.print(x+",");
-//             System.out.println("");
-//             int temp=A[0];
+        // for (int x:A)
+        //     System.out.print(x+",");
+        //     System.out.println("");
+        //     int temp=A[0];
 
-//             for(int i=1;i<A.length;i++){
-//                 A[i-1]=A[i];
-//             }
-//             A[A.length-1]=temp;
+        //     for(int i=1;i<A.length;i++){
+        //         A[i-1]=A[i];
+        //     }
+        //     A[A.length-1]=temp;
 
-//             for (int x:A)
-//             System.out.print(x+",");
-//             System.out.println("");
+        //     for (int x:A)
+        //     System.out.print(x+",");
+        //     System.out.println("");
+
+
+        
 
 
 //     }
@@ -339,7 +345,7 @@
 
 
 
-
+//=============================================================================================================================================================================================
 //Finding maxinmum element.........
 
 // import java.util.*;
@@ -360,28 +366,32 @@
 //     }
 // }
 
+//=============================================================================================================================================================================================================================================================
 
-import java.util.*;
-public class array {
-    public static void main(String args[]){
-        int A[]={3,9,7,8,12,6,15,5,4,10};
+//Previous maximum::
 
-        int maxinmum=A[0];
+
+// import java.util.*;
+// public class array {
+//     public static void main(String args[]){
+//         int A[]={3,9,7,8,12,6,15,5,4,10};
+
+//         int maxinmum=A[0];
         
-        int prevMaximum=Integer.MIN_VALUE;
+//         int prevMaximum=Integer.MIN_VALUE;
 
-        for (int i=0;i<A.length;i++){
-            if(A[i]>maxinmum){
-                prevMaximum=maxinmum;
-                maxinmum=A[i];
-            }
-            else if(A[i]>prevMaximum && A[i]!=maxinmum){
-                 prevMaximum=A[i];
-            }
-        }
-        System.out.println(prevMaximum);
-    }
-}
+//         for (int i=0;i<A.length;i++){
+//             if(A[i]>maxinmum){
+//                 prevMaximum=maxinmum;
+//                 maxinmum=A[i];
+//             }
+//             else if(A[i]>prevMaximum && A[i]!=maxinmum){
+//                  prevMaximum=A[i];
+//             }
+//         }
+//         System.out.println(prevMaximum);
+//     }
+// }
 
 
 
@@ -479,3 +489,59 @@ public class array {
 
 //     }
 // }
+
+
+
+
+
+// public class array {
+
+//     static void inc(int x){
+//         x++;
+//         System.out.println(x);
+//     }
+//     public static void main(String args[]){
+//         int a=10,b=15;
+//         inc(a);
+//         System.out.println(a);
+       
+//     }
+// }
+
+//Prime Number
+
+// public class array {
+
+//     static boolean primeNum(int n){
+        
+//         for(int i=2;i<n/2;i++){
+//             if(n%2==0)
+//             return false;
+            
+            
+//         }
+//         return true;
+//     }
+//         public static void main(String args[]){
+//         System.out.print(primeNum(98));
+//         }
+    // }
+
+    //GCD 
+
+// public class array {
+
+//            static int gcd(int m,int n){
+//                 while(m!=n){
+//                     if(m>n)m=m-n;
+//                     else n=n-m;
+//                 }
+//                 return m;
+//             }
+//     public static void main(String args[]){
+   
+//         System.out.print(gcd(35,56));
+//             }
+//         }
+
+      

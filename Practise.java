@@ -44,7 +44,7 @@ public class Practise{
         System.out.print("Enter value for c: ");
         c=sc.nextInt();
 
-      r1=
+      
 
     
       
