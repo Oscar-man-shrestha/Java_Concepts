@@ -86,23 +86,100 @@
 // }
 
 
+// public class methods {
+
+//   static int max(int x,int y){
+//     return x>y?x:y;
+//   }
+//   static float max(float x,float y){
+
+//     if(x>y)
+//     return x;
+//     else
+//     return y;
+//   }
+//     public static void main(String args[]){
+//       System.out.println(max(10f,5f));
+
+//     }
+    
+// }
+
+//behaviour change -polymorphism. parameter depends
+
+//====================================================Method overloading===================================================================
+
+// public class methods {
+
+//   void show(double a){
+//     System.out.println("int method");
+//   }
+
+//   void show(String a){
+//     System.out.println("String method");
+//   }
+
+//       public static void main(String args[]){
+//      methods obj=new methods();
+//      obj.show(2.20f);
+
+//     }
+    
+// }
+
+
+// public class methods {
+
+//   void show(StringBuffer a){
+//     System.out.println("int method");
+//   }
+
+//   void show(String a){
+//     System.out.println("String method");
+//   }
+
+//       public static void main(String args[]){
+//      methods obj=new methods();
+//      obj.show("haha");
+
+//     }
+    
+// }
+
+// public class methods {
+
+//   void show(int a,float b){
+//     System.out.println("int method");
+//   }
+
+//   void show(float a ,int b){
+//     System.out.println("String method");
+//   }
+
+//       public static void main(String args[]){
+//      methods obj=new methods();
+//      obj.show(20,3);
+
+//     }
+    
+// }
+
+// output:The method show(int, float) is ambiguous for the type methods
+
 public class methods {
 
-  static int max(int x,int y){
-    return x>y?x:y;
+  void show(int... a){
+    System.out.println("int method");
   }
-  static float max(float x,float y){
 
-    if(x>y)
-    return x;
-    else
-    return y;
+  void show(float a ,int b){
+    System.out.println("String method");
   }
-    public static void main(String args[]){
-      System.out.println(max(10f,5f));
+
+      public static void main(String args[]){
+     methods obj=new methods();
+     obj.show(20,20,21);
 
     }
     
 }
-
-//behaviour change -polymorphism. parameter depends
